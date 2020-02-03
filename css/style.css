@@ -24,7 +24,15 @@
   border: 5px solid #ED825F;
   border-radius: 8px;
   min-height: 500px;
-  min-width: 300px;
+  min-width: 250px;
+}
+
+.todo-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .todo-list__item {
@@ -32,6 +40,15 @@
   height: 40px;
   border: 1px solid black;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .todo-list__item_close {
