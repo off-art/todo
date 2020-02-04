@@ -1,48 +1,61 @@
 *
   font-family: sans-serif
+  font-size: 15px
   margin: 0
   padding: 0
   box-sizing: border-box
+.closeTask
+  text-decoration: line-through
+  opacity: .5
 
 .todo
+  &-input
+    padding-left: 10px
+    outline: none
+    border: none
+    border-radius: 5px
   &-wrap
-    background-color: #6AB690
     height: 100vh
     display: flex
     justify-content: center
     align-items: center
   &-container
-    border: 5px solid #ED825F
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22)
+    background-color: #EDEDED
     border-radius: 8px
     min-height: 500px
     min-width: 250px
   &-top
+    margin-top: 10px
+    padding: 10px
+    margin-bottom: 10px
     display: flex
     justify-content: space-around
   &-list
     &__item
-      margin-bottom: 5px
+      width: 90%
+      margin: 0 auto
+      margin-bottom: 10px
       height: 40px
-      border: 1px solid black
       position: relative
       display: flex
-      justify-content: center
       align-items: center
+      padding-left: 15px
+      cursor: pointer
+      border: none
+      border-radius: 5px
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      transition: all .7s
+      &:hover
+        transform: translateZ(5px)
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22)
       &_close
         position: absolute
-        font-size: 10px
-        width: 20px
-        height: 20px
-        border: 1px solid black
-        border-radius: 50%
         right: 5%
-        top: 25%
-        display: flex
-        justify-content: center
-        align-items: center
-        font-weight: 700
-        background-color: red
         cursor: pointer
+        &:hover
+          color: red
+        
         
 
         
