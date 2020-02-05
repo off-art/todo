@@ -26,11 +26,11 @@ window.onload = function() {
     }
   }
 
-  // Создание нового элемента списка
+  // Event click and enter 
   button.addEventListener("click", function() {
     addTask()
   });
-  
+  // 
   document.addEventListener("keypress", function(e) {
     addTask()
   });
