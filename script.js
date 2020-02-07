@@ -15,23 +15,27 @@ window.onload = function() {
       buttonClose.className = "fa fa-trash-o de todo-list__item_close";
       itemList.appendChild(buttonClose);
       text.value = "";
-
       buttonClose.addEventListener("click", function(e) {
         e.target.offsetParent.style.display = "none";
       });
-
       itemList.addEventListener("click", function(e) {
         e.target.classList.toggle("closeTask");
       });
     }
   }
 
-  // Event click and enter 
+  // Event click and enter
   button.addEventListener("click", function() {
-    addTask()
+    addTask();
   });
-  // 
+  //
   document.addEventListener("keypress", function(e) {
-    addTask()
+    if (text.value == "") {
+      return text.value;
+    } else {
+      if (e.charCode === 13) {
+        addTask();
+      }
+    }
   });
 };
