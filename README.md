@@ -1,6 +1,6 @@
 # ToDo
 
-![](ezgif.com-resize (1).gif)
+![](todolist.gif)
 
 Обычный TODO List
 
