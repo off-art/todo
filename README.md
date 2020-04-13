@@ -1,5 +1,7 @@
 # ToDo
 
+![](ezgif.com-resize (1).gif)
+
 Обычный TODO List
 
 Работа с задачами: 
